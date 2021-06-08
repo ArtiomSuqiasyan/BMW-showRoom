@@ -35,6 +35,7 @@ header {
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+
 .logo-name:hover .name {
   display: flex;
   overflow: hidden;
@@ -42,6 +43,19 @@ header {
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+
+#logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  margin: auto;
+}
+
 @keyframes rotate {
   from {
     left: 20px;
@@ -52,6 +66,8 @@ header {
     transform: rotate(360deg);
   }
 }
+
+
 @keyframes fade {
   from {
     width: 0;
@@ -78,17 +94,7 @@ header {
   justify-content: center;
 }
 
-#logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  bottom: 0;
-  margin: auto;
-}
+
 .name {
   color: white;
   font-size: 62px;
