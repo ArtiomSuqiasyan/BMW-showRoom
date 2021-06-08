@@ -67,7 +67,6 @@ header {
   }
 }
 
-
 @keyframes fade {
   from {
     width: 0;
@@ -76,7 +75,6 @@ header {
     width: 100%;
   }
 }
-
 
 .nav-menu {
   height: 100%;
@@ -93,7 +91,6 @@ header {
   align-items: center;
   justify-content: center;
 }
-
 
 .name {
   color: white;

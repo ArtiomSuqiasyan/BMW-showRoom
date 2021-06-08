@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 body {
   background-image: url("../img/bg.jpg");
 }
+
 header {
   position: fixed;
   left: 0;
@@ -13,32 +17,33 @@ header {
   margin: auto;
   width: 95%;
   height: 100px;
-  background-color: blue;
+  background-color: #000000;
   border-radius: 40px;
   display: flex;
   justify-content: space-between;
 }
-a {
-  text-decoration: none;
-}
+
 .logo-name {
   height: 100%;
   width: 25%;
   margin: 0 auto;
   font-size: 75px;
+  position: relative;
 }
-.nav-menu {
-  height: 100%;
-  width: 50%;
-  background-color: rgb(240, 243, 247);
+.logo-name:hover #logo {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.logo-name:hover .name {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  animation: fade 4s steps(60, end);
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
-.photo {
-  width: 25%;
-  height: 100%;
-}
+
 #logo {
   width: 80px;
   height: 80px;
@@ -50,6 +55,56 @@ a {
   bottom: 0;
   margin: auto;
 }
+
+@keyframes rotate {
+  from {
+    left: 20px;
+    transform: rotate(0);
+  }
+  to {
+    left: 200px;
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes fade {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+.nav-menu {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.name {
+  color: white;
+  font-size: 62px;
+  letter-spacing: 5px;
+  margin-left: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: none;
+}
 .nav-menu ul {
   width: 400px;
   height: 40px;
@@ -58,11 +113,19 @@ a {
   justify-content: space-around;
 }
 .nav-menu ul li {
-  background-color: rgb(22, 22, 136);
+  background-color: #346780;
   width: 90px;
-  color: brown;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+}
+.nav-menu ul li:hover {
+  background-color: #1c6cb5;
+  font-size: 18px;
+  border: 1px solid white;
+}
+.nav-menu ul li a {
+  color: white;
 }
