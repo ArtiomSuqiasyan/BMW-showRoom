@@ -12,6 +12,7 @@ body {
 
 header {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -21,6 +22,7 @@ header {
   border-radius: 40px;
   display: flex;
   justify-content: space-between;
+  z-index: 99999999;
 }
 
 .logo-name {
@@ -28,7 +30,6 @@ header {
   width: 25%;
   margin: 0 auto;
   font-size: 75px;
-  position: relative;
 }
 .logo-name:hover #logo {
   animation-name: rotate;
@@ -51,6 +52,7 @@ header {
     left: 200px;
     transform: rotate(360deg);
   }
+ 
 }
 
 @keyframes fade {
@@ -124,4 +126,45 @@ header {
 }
 .nav-menu ul li a {
   color: white;
+}
+
+.cont{
+  width: 80%;
+  min-height: 800px;
+  background-color: #346780;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 120px;
+  margin: auto;
+}
+.cont1{
+  width: 100%;
+  min-height:500px;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+
+}
+.cont1>div{
+  height: 400px;
+}
+.E46{
+  background-image: url("../img/bmwE46.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.E60{
+  background-image: url("../img/bmwE60.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.E90{
+  background-image: url("../img/bmwE90.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

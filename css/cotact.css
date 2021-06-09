@@ -94,7 +94,6 @@
     justify-content: center;
   }
   
-  
   .name {
     color: white;
     font-size: 62px;
@@ -129,4 +128,61 @@
   .nav-menu ul li a {
     color: white;
   }
-  
+.our-contacts{
+  background-color: rgb(18, 19, 19);
+  display: inline-block;
+  position: absolute;
+  left: 250px;
+  right: 250px;
+  font-size: 20px;
+  color: #fff;
+  justify-content: space-around;
+
+}
+
+.input-form{
+  position: absolute;
+  top: 200px;
+  margin-left: 50px;
+  width: 400px;
+  height: 300px;
+
+}
+
+.input-form label {
+  display: block;
+}
+
+.contact{
+  position: absolute;
+  top:110px;
+  left: 343px;
+  right: 343px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.maps{
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+
+textarea{
+  resize: none;
+}
+
+.contact ul{
+  list-style: none;
+  display: flex;
+}
+
+.contact ul li{
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.contact ul li a{
+  color: #fff;
+}
