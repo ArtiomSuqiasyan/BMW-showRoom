@@ -2,16 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
 }
 a {
   text-decoration: none;
 }
+img {
+  width: 100%;
+}
 body {
   background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -21,6 +30,7 @@ header {
   border-radius: 40px;
   display: flex;
   justify-content: space-between;
+  z-index: 99999999;
 }
 
 .logo-name {
@@ -28,14 +38,12 @@ header {
   width: 25%;
   margin: 0 auto;
   font-size: 75px;
-  position: relative;
 }
 .logo-name:hover #logo {
   animation-name: rotate;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
-
 .logo-name:hover .name {
   display: flex;
   overflow: hidden;
@@ -43,19 +51,6 @@ header {
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
-
-#logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  bottom: 0;
-  margin: auto;
-}
-
 @keyframes rotate {
   from {
     left: 20px;
@@ -67,7 +62,6 @@ header {
   }
 }
 
-
 @keyframes fade {
   from {
     width: 0;
@@ -76,7 +70,6 @@ header {
     width: 100%;
   }
 }
-
 
 .nav-menu {
   height: 100%;
@@ -94,6 +87,17 @@ header {
   justify-content: center;
 }
 
+#logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  margin: auto;
+}
 
 .name {
   color: white;
@@ -129,13 +133,4 @@ header {
 .nav-menu ul li a {
   color: white;
 }
-.cont{
-  width: 80%;
-  min-height: 800px;
-  background-color: #346780;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 120px;
-  margin: auto;
-}
+

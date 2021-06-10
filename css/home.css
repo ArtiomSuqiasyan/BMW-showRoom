@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+  font-family: "Libre Baskerville", serif;
 }
 a {
   text-decoration: none;
@@ -136,7 +137,7 @@ header {
 .cont {
   width: 80%;
   min-height: 800px;
-  background-color: rgba(117, 108, 108, 0.541);
+  background-color: rgba(168, 160, 160, 0.582);
 
   position: absolute;
   left: 0;
@@ -235,5 +236,9 @@ header {
 .cont2txt {
   width: 60%;
   height: 500px;
-  background-color: rgba(182, 174, 174, 0.9);
+  padding: 10px;
+  font-size: 22px;
+  color: fff;
+  font-weight: bold;
+  line-height: 30px;
 }
