@@ -129,3 +129,13 @@ header {
 .nav-menu ul li a {
   color: white;
 }
+.cont{
+  width: 80%;
+  min-height: 800px;
+  background-color: #346780;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 120px;
+  margin: auto;
+}
