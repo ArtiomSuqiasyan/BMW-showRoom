@@ -2,15 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 a {
   text-decoration: none;
 }
-img{
+img {
   width: 100%;
 }
 body {
   background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
@@ -55,7 +59,6 @@ header {
     left: 200px;
     transform: rotate(360deg);
   }
- 
 }
 
 @keyframes fade {
@@ -95,7 +98,6 @@ header {
   margin: auto;
 }
 
-
 .name {
   color: white;
   font-size: 62px;
@@ -131,51 +133,52 @@ header {
   color: white;
 }
 
-.cont{
+.cont {
   width: 80%;
   min-height: 800px;
-  background-color: #346780;
+  background-color: rgba(117, 108, 108, 0.541);
+
   position: absolute;
   left: 0;
   right: 0;
   top: 120px;
   margin: auto;
+  padding: 10px;
 }
-.cont1{
+.cont1 {
   width: 100%;
-  min-height:500px;
+  min-height: 500px;
   display: grid;
   grid-column-gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 20px;
-
 }
-.cont1>div{
+.cont1 > div {
   height: 400px;
 }
-.E46{
+.E46 {
   background-image: url("../img/bmwE46.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all 0.5s
+  transition: all 0.5s;
 }
-.E60{
+.E60 {
   background-image: url("../img/bmwE60.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all 0.5s 
+  transition: all 0.5s;
 }
-.E90{
+.E90 {
   background-image: url("../img/bmwE90.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all 0.5s
+  transition: all 0.5s;
 }
 
-.bmw-btn{
+.bmw-btn {
   display: block;
   margin: 300px auto;
   font-size: 14px;
@@ -186,55 +189,51 @@ header {
   color: #fff;
 }
 
-.E46:hover{
+.E46:hover {
   background-image: url("../img/bmwe46interjpg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
-.E46:hover .bmw-btn{
+.E46:hover .bmw-btn {
   display: block;
 }
 
-.E60:hover{
+.E60:hover {
   background-image: url("../img/bmwE60inter.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
-.E60:hover .bmw-btn{
+.E60:hover .bmw-btn {
   display: block;
 }
 
-.E90:hover{
+.E90:hover {
   background-image: url("../img/bmwE90inter.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
-.E90:hover .bmw-btn{
+.E90:hover .bmw-btn {
   display: block;
 }
-.cont2{
+.cont2 {
   width: 100%;
   height: 500px;
   display: flex;
   margin-bottom: 70px;
 }
-.cont2img{
+.cont2img {
   width: 40%;
   height: 500px;
   overflow: hidden;
 }
-.cont2txt{
+.cont2txt {
   width: 60%;
   height: 500px;
-  background-color: blue;
-
+  background-color: rgba(182, 174, 174, 0.9);
 }
