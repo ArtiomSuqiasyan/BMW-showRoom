@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
   font-family: "Libre Baskerville", serif;
 }
 a {
@@ -135,8 +134,8 @@ header {
 .cont {
   width: 80%;
   min-height: 800px;
-  background-color: rgba(168, 160, 160, 0.582);
-
+  background-color: rgba(100, 97, 97, 0.582);
+  color: white;
   position: absolute;
   left: 0;
   right: 0;
@@ -144,13 +143,11 @@ header {
   margin: auto;
   padding: 10px;
 }
-h1{
+h1 {
   margin-bottom: 30px;
   font-size: 53px;
   letter-spacing: 7px;
 }
-
-
 
 .cont1 {
   width: 100%;
@@ -230,31 +227,37 @@ h1{
 }
 .cont2 {
   width: 100%;
-  height: 500px;
-  display: flex;
+  min-height: 500px;
   margin-bottom: 70px;
 }
+.cont > h1 {
+  text-align: center;
+}
 .cont2img {
-  width: 40%;
-  height: 500px;
+  float: left;
+  width: 400px;
+  margin: 20px;
+  height: 300px;
   overflow: hidden;
 }
 .cont2txt {
-  width: 60%;
-  height: 500px;
+  width: 100%;
+  position: relative;
+  min-height: 500px;
   padding: 10px;
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
   line-height: 30px;
 }
 
 .footer {
   display: flex;
+  justify-content: space-around;
   width: 100%;
   min-height: 200px;
   background-color: #000000;
   position: absolute;
-  top: 1300px;
+  top: 1380px;
 }
 
 .adresses {
@@ -266,9 +269,7 @@ h1{
 .adresses li {
   list-style-type: none;
   padding-top: 20px;
-  font-size:   16px;
-
-
+  font-size: 16px;
 }
 
 .adresses ul li a {
