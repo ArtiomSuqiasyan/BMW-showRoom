@@ -2,9 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
 }
 a {
   text-decoration: none;
+}
+img {
+  width: 100%;
 }
 body {
   background-image: url("../img/bg.jpg");
@@ -15,6 +21,7 @@ body {
 
 header {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -24,6 +31,7 @@ header {
   border-radius: 40px;
   display: flex;
   justify-content: space-between;
+  z-index: 99999999;
 }
 
 .logo-name {
@@ -52,6 +60,25 @@ header {
   height: 80px;
   border-radius: 100%;
   overflow: hidden;
+}
+.logo-name:hover #logo {
+  transform: rotate(360deg);
+}
+#logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  transition-duration: 2s;
+}
+.effect {
+  height: 100%;
+  width: 200px;
+  background-color: rgb(0, 0, 0);
   position: absolute;
   top: 0;
   left: 20px;
@@ -77,6 +104,36 @@ header {
   to {
     width: 100%;
   }
+  border-radius: 40px;
+  transition-duration: 2s;
+}
+
+.name {
+  color: black;
+  font-size: 62px;
+  letter-spacing: 5px;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  bottom: 0;
+  margin: auto;
+  transition-duration: 2s;
+}
+
+
+.logo-name:hover .effect {
+  left: 232px;
+
+}
+.logo-name:hover .name {
+  color: white;
+
+}
+
+.bmw-logo{
+  border-radius: 50%;
 }
 
 .nav-menu {
@@ -105,6 +162,7 @@ header {
   align-items: center;
   display: none;
 }
+
 .nav-menu ul {
   width: 400px;
   height: 40px;
@@ -130,6 +188,16 @@ header {
   color: white;
 }
 .our-contacts {
+
+.photo {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.our-contacts{
   background-color: rgb(18, 19, 19);
   display: inline-block;
   position: absolute;

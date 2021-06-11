@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
 }
 a {
   text-decoration: none;
+}
+img {
+  width: 100%;
 }
 body {
   background-image: url("../img/bg.jpg");
@@ -15,6 +20,7 @@ body {
 
 header {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -25,6 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 1;
+
 }
 
 .logo-name {
@@ -32,43 +39,46 @@ header {
   width: 25%;
   margin: 0 auto;
   font-size: 75px;
-  position: relative;
 }
 .logo-name:hover #logo {
-  animation-name: rotate;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  transform: rotate(360deg);
 }
-
-.logo-name:hover .name {
-  display: flex;
-  overflow: hidden;
-  animation: fade 4s steps(60, end);
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
 #logo {
   width: 80px;
   height: 80px;
-  border-radius: 100%;
-  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  transition-duration: 2s;
+}
+.effect {
+  height: 100%;
+  width: 200px;
+  background-color: rgb(0, 0, 0);
   position: absolute;
   top: 0;
   left: 20px;
   bottom: 0;
   margin: auto;
+  border-radius: 40px;
+  transition-duration: 2s;
 }
 
-@keyframes rotate {
-  from {
-    left: 20px;
-    transform: rotate(0);
-  }
-  to {
-    left: 200px;
-    transform: rotate(360deg);
-  }
+.name {
+  color: black;
+  font-size: 62px;
+  letter-spacing: 5px;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  bottom: 0;
+  margin: auto;
+  transition-duration: 2s;
 }
 
 @keyframes fade {
@@ -78,6 +88,18 @@ header {
   to {
     width: 100%;
   }
+
+.logo-name:hover .effect {
+  left: 232px;
+
+}
+.logo-name:hover .name {
+  color: white;
+
+}
+
+.bmw-logo{
+  border-radius: 50%;
 }
 
 .nav-menu {
@@ -88,13 +110,6 @@ header {
   align-items: center;
 }
 
-.photo {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .name {
   color: white;
@@ -168,4 +183,11 @@ header {
 }
 .aboutimg div {
   background-color: violet;
+
+.photo {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
