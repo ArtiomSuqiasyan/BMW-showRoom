@@ -142,7 +142,7 @@ header {
   width: 100%;
   min-height: 400px;
   font-size: 18px;
-  margin-bottom:180px;
+  margin-bottom: 180px;
 }
 input::-webkit-input-placeholder {
   text-indent: 0px;
@@ -187,7 +187,6 @@ input:focus:-ms-input-placeholder {
 .send {
   width: 88%;
   height: 32px;
-
 }
 input {
   border: none;
@@ -206,7 +205,6 @@ textarea {
   border-radius: 2%;
   margin-top: 5px;
   margin-bottom: 5px;
-  
 }
 .data {
   width: 50%;
@@ -224,4 +222,94 @@ textarea {
   width: 100%;
   height: 400px;
   padding: 0 40px;
+}
+.footer {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  background-color: #000000;
+  position: absolute;
+  top: 1220px;
+}
+
+.adresses {
+  padding: 20px;
+  padding-left: 100px;
+  width: 33.3%;
+  min-height: 200px;
+  color: #fff;
+}
+
+.adresses::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100px;
+  background-color: #fff;
+  bottom: 50px;
+  left: 35%;
+  opacity: 0.7;
+}
+
+.adresses li {
+  list-style-type: none;
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.adresses ul li a {
+  color: #fff;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+.social-nets {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 33.3%;
+  min-height: 200px;
+}
+
+.social-nets::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100px;
+  background-color: #fff;
+  bottom: 50px;
+  left: 70%;
+  opacity: 0.7;
+}
+
+.menu-footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 33.3%;
+  min-height: 200px;
+}
+
+.footer-links li {
+  list-style-type: none;
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 40px;
+  padding-top: 50px;
+  color: #fff;
 }
