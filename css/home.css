@@ -80,17 +80,14 @@ header {
   transition-duration: 2s;
 }
 
-
 .logo-name:hover .effect {
   left: 232px;
-
 }
 .logo-name:hover .name {
   color: white;
-
 }
 
-.bmw-logo{
+.bmw-logo {
   border-radius: 50%;
 }
 
@@ -102,7 +99,6 @@ header {
   align-items: center;
 }
 
-
 .nav-menu ul {
   width: 400px;
   height: 40px;
@@ -111,8 +107,8 @@ header {
   justify-content: space-around;
 }
 .nav-menu ul li {
-  background-color: #346780;
-  width: 90px;
+  background-color: #08033fa8;
+  width: 120px;
   color: white;
   display: flex;
   align-items: center;
