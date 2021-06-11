@@ -80,17 +80,14 @@ header {
   transition-duration: 2s;
 }
 
-
 .logo-name:hover .effect {
   left: 232px;
-
 }
 .logo-name:hover .name {
   color: white;
-
 }
 
-.bmw-logo{
+.bmw-logo {
   border-radius: 50%;
 }
 
@@ -101,7 +98,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 
 .nav-menu ul {
   width: 400px;
@@ -134,4 +130,146 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.aboutcont {
+  width: 80%;
+  min-height: 600px;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(100, 97, 97, 0.582);
+  padding: 40px 20px;
+  color: white;
+}
+.aboutcont > h1 {
+  text-align: center;
+}
+.abouttxt {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.aboutimg {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.Artyom {
+  background-image: url("../img/ArtyomProfile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Lilit {
+  background-image: url("../img/LilitProfile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Armen {
+  background-image: url("../img/ArmenProfile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  background-color: #000000;
+  position: absolute;
+  top: 1120px;
+}
+
+.adresses {
+  padding: 20px;
+  padding-left: 100px;
+  width: 33.3%;
+  min-height: 200px;
+  color: #fff;
+}
+
+.adresses::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100px;
+  background-color: #fff;
+  bottom: 50px;
+  left: 35%;
+  opacity: 0.7;
+}
+
+.adresses li {
+  list-style-type: none;
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.adresses ul li a {
+  color: #fff;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+.social-nets {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 33.3%;
+  min-height: 200px;
+}
+
+.social-nets::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100px;
+  background-color: #fff;
+  bottom: 50px;
+  left: 70%;
+  opacity: 0.7;
+}
+
+.menu-footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 33.3%;
+  min-height: 200px;
+}
+
+.footer-links li {
+  list-style-type: none;
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 40px;
+  padding-top: 50px;
+  color: #fff;
 }
