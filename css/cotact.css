@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   text-align: center;
   font-family: "Libre Baskerville", serif;
 }
@@ -38,6 +39,27 @@ header {
   width: 25%;
   margin: 0 auto;
   font-size: 75px;
+  position: relative;
+}
+.logo-name:hover #logo {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.logo-name:hover .name {
+  display: flex;
+  overflow: hidden;
+  animation: fade 4s steps(60, end);
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
 }
 .logo-name:hover #logo {
   transform: rotate(360deg);
@@ -62,6 +84,26 @@ header {
   left: 20px;
   bottom: 0;
   margin: auto;
+}
+
+@keyframes rotate {
+  from {
+    left: 20px;
+    transform: rotate(0);
+  }
+  to {
+    left: 200px;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
   border-radius: 40px;
   transition-duration: 2s;
 }
@@ -102,6 +144,24 @@ header {
   align-items: center;
 }
 
+.photo {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  color: white;
+  font-size: 62px;
+  letter-spacing: 5px;
+  margin-left: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: none;
+}
 
 .nav-menu ul {
   width: 400px;
@@ -127,6 +187,7 @@ header {
 .nav-menu ul li a {
   color: white;
 }
+.our-contacts {
 
 .photo {
   height: 100%;
@@ -145,52 +206,50 @@ header {
   font-size: 20px;
   color: #fff;
   justify-content: space-around;
-
 }
 
-.input-form{
+.input-form {
   position: absolute;
   top: 200px;
   margin-left: 50px;
   width: 400px;
   height: 300px;
-
 }
 
 .input-form label {
   display: block;
 }
 
-.contact{
+.contact {
   position: absolute;
-  top:110px;
+  top: 110px;
   left: 343px;
   right: 343px;
   margin: 0 auto;
   color: #fff;
 }
 
-.maps{
+.maps {
   position: absolute;
   top: 200px;
   right: 50px;
 }
 
-textarea{
+textarea {
   resize: none;
 }
 
-.contact ul{
+.contact ul {
   list-style: none;
   display: flex;
 }
 
-.contact ul li{
+.contact ul li {
   margin-bottom: 20px;
   margin-left: 25px;
   margin-right: 25px;
 }
 
-.contact ul li a{
+.contact ul li a {
   color: #fff;
 }
