@@ -1,10 +1,3 @@
-@media screen and (max-width: 1024px){
-    .footer{
-        top:2000px;
-    }
-
-
-}
 @media screen and (max-width: 768px){
     header{
         width: 100%;
@@ -34,12 +27,8 @@
     .photo{
         display: none;
     }
-    .cont1 > div {
-        height: 700px;
-      }
-    
     .footer{
-        top:3540px;
+        top:1200px;
         height: 100px;
     }
     .menu-footer{
@@ -62,41 +51,25 @@
     .adresses::after{
         display: none;
     }
-    .cont2img {
-        float: none;
-        display: block;
-        width: 520px;
-        margin:auto;
-      }
-      .cont2txt {
-          text-align:center;
-      }
+    .contacts{
+        margin-bottom: 40px;
+        width: 100%;
+        justify-content: center;
+    }
+    
 
 }
 @media screen and (max-width: 425px){
-    *{
-        margin:0;
-        padding: 0;
-    }
-    .cont{
-        width: 100%;
-        position: relative;
-    }
-    .cont2img{
-        width: 98%;
-    }
-    .cont2txt{
-        font-size: 15px;
-        letter-spacing: 0;
-    }
-    .cont1 > div {
-        height: 400px;
-      }
+.contacts {
+    width: 100%;
+}
+.input-form{
+    width: 100%;
+
+}
     .footer{
-        top:2500px;
+        top:1080px;
     }
-    h1{
-        font-size: 35px;
-    }
+
 
 }
