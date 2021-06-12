@@ -123,6 +123,10 @@ header {
   color: white;
 }
 
+.icon{
+  display: none;
+}
+
 .photo {
   height: 100%;
   width: 25%;
