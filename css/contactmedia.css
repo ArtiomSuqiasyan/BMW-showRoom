@@ -73,3 +73,63 @@
 
 
 }
+
+@media screen and (max-width: 425px) {
+  header {
+    padding-right: 40px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav-menu ul li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .icon {
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    font-size: 40px;
+  }
+
+  .nav-menu .mobile-icon:hover .nav-menu {
+    display: none;
+    background-color: blue;
+  }
+
+  .effect {
+    left: 30px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .cont {
+    width: 100%;
+    position: relative;
+  }
+  .cont2img {
+    width: 98%;
+  }
+  .cont2txt {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+  .cont1 > div {
+    height: 400px;
+  }
+  .footer {
+    top: 2500px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+}
