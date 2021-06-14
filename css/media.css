@@ -93,10 +93,6 @@
     font-size: 40px;
   }
 
-  .nav-menu .mobile-icon:hover .nav-menu {
-    display: none;
-    background-color: blue;
-  }
 
   .effect {
     left: 30px;
