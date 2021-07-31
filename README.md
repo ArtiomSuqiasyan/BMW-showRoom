@@ -1,4 +1,4 @@
-[Our little site for BMW](https://artiomsuqiasyan.github.io/BMW-showRoom/)
+[Our little site for BMW](https://artyomsukiasyan.github.io/BMW-showRoom/)
 
 # Site structure
 
